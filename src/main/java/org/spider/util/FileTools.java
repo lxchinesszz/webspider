@@ -4,7 +4,7 @@ import java.io.*;
 
 /**
  * @author liuxin
- * @version Id: FileTools.java, v 0.1 2018/7/30 下午2:47
+ * @version Id: FileTools.java, v 0.1 2018/7/30 下午6:47
  */
 public class FileTools {
     public static String fileContent(String filePath) {

@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author liuxin
- * @version Id: SpiderThreadFactory.java, v 0.1 2018/7/27 下午2:07
+ * @version Id: SpiderThreadFactory.java, v 0.1 2018/7/27 下午6:07
  */
 public class SpiderThreadFactory implements ThreadFactory {
     /**

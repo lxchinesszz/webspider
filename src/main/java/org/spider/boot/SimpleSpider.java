@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * @author liuxin
- * @version Id: SimpleSpider.java, v 0.1 2018/7/30 上午10:54
+ * @version Id: SimpleSpider.java, v 0.1 2018/7/30 下午10:54
  */
 public class SimpleSpider extends DefaultWebKernelSpider {
 
@@ -31,8 +31,14 @@ public class SimpleSpider extends DefaultWebKernelSpider {
     public SimpleSpider(SpiderHandler spiderHandler, boolean isStatic) {
         this(spiderHandler, isStatic ? new WebStaticHtmlContentResolver() : new WebDynamicHtmlContentResolver(),
                 new PrintDownloadsPipeline(),
-                isStatic?Arrays.asList(new RandomAgentRequestMiddleware())
-                        :Arrays.asList(new HtmlUnitRandomAgentRequestMiddleware()));
+                isStatic ? Arrays.asList(new RandomAgentRequestMiddleware())
+                        : Arrays.asList(new HtmlUnitRandomAgentRequestMiddleware()));
+    }
+
+    public SimpleSpider(SpiderHandler spiderHandler, DownloadsPipeline downloadsPipeline, boolean isStatic) {
+        this(spiderHandler, isStatic ? new WebStaticHtmlContentResolver() : new WebDynamicHtmlContentResolver(), downloadsPipeline,
+                isStatic ? Arrays.asList(new RandomAgentRequestMiddleware())
+                        : Arrays.asList(new HtmlUnitRandomAgentRequestMiddleware()));
     }
 
     public SimpleSpider(SpiderHandler spiderHandler, HtmlContent htmlContent) {

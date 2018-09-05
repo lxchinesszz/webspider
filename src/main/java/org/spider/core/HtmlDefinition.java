@@ -6,7 +6,7 @@ import org.jsoup.nodes.Document;
 
 /**
  * @author liuxin
- * @version Id: HtmlDefinition.java, v 0.1 2018/7/26 下午4:19
+ * @version Id: HtmlDefinition.java, v 0.1 2018/7/26 下午10:19
  */
 @Data
 @AllArgsConstructor

@@ -17,7 +17,6 @@ import org.spider.core.middleware.RequestConfigRegister;
 import org.spider.core.middleware.RequestMiddleware;
 import org.spider.util.KernelSpiderApplictionTools;
 import org.spider.util.SpiderThreadExecutor;
-import org.springframework.lang.Nullable;
 
 import java.util.*;
 import java.util.concurrent.BlockingQueue;
@@ -66,7 +65,6 @@ public abstract class KernelSpider implements Spider, RequestConfigRegister, Req
     /**
      * Reference to the JVM shutdown hook, if registered
      */
-    @Nullable
     private Thread shutdownHook;
 
     /**

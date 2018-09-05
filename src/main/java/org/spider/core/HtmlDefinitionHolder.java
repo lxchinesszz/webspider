@@ -3,7 +3,7 @@ package org.spider.core;
 
 /**
  * @author liuxin
- * @version Id: HtmlDefinitionHolder.java, v 0.1 2018/7/26 下午4:05
+ * @version Id: HtmlDefinitionHolder.java, v 0.1 2018/7/26 下午9:05
  */
 public class HtmlDefinitionHolder {
     /**

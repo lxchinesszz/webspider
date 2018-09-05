@@ -16,7 +16,7 @@ import java.util.List;
 
 /**
  * @author liuxin
- * @version Id: WebSpiderInitializer.java, v 0.1 2018/7/27 上午10:16
+ * @version Id: WebSpiderInitializer.java, v 0.1 2018/7/27 下午10:16
  */
 @Slf4j
 public class WebSpiderInitializer implements SpiderInitializer {

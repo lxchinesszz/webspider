@@ -10,7 +10,7 @@ import java.util.UUID;
 
 /**
  * @author liuxin
- * @version Id: WebKernelSpider.java, v 0.1 2018/7/28 下午3:16
+ * @version Id: WebKernelSpider.java, v 0.1 2018/7/28 下午11:16
  */
 @Slf4j
 public class DefaultWebKernelSpider extends KernelSpider implements CrawlSupport {

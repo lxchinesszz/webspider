@@ -4,7 +4,7 @@ import org.spider.core.KernelSpider;
 
 /**
  * @author liuxin
- * @version Id: KernelSpiderApplictionTools.java, v 0.1 2018/8/1 上午10:04
+ * @version Id: KernelSpiderApplictionTools.java, v 0.1 2018/8/1 下午10:04
  */
 public class KernelSpiderApplictionTools {
     private static KernelSpider kernelSpider;

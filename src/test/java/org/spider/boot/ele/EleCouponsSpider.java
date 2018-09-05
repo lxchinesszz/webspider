@@ -94,7 +94,6 @@ public class EleCouponsSpider {
             public Map<String, String> doCrawl(HtmlDefinition<Document> htmlDefinition, WillRequests willRequests) {
                 Map<String, String> map = new HashMap<>();
                 Document document = htmlDefinition.getDocument();
-//                System.out.println(htmlDefinition.getHtmlText());
                 Elements select = document.select(cssQuery);
                 select.forEach(element -> {
                     //饿了么红包

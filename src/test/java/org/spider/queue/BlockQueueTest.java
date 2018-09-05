@@ -11,13 +11,18 @@ import java.util.concurrent.BlockingQueue;
  */
 public class BlockQueueTest {
     @Test
-    public void queueTest()throws Exception{
-        BlockingQueue bq=new BlockingArrayQueue();
+    public void queueTest() throws Exception {
+        BlockingQueue bq = new BlockingArrayQueue();
         bq.add(1);
         bq.add(2);
         bq.add(3);
         System.out.println(bq.take());
         System.out.println(bq.take());
         System.out.println(bq.take());
+        Thread.currentThread().interrupt();
+        System.out.println(Thread.currentThread().isInterrupted());
+        Thread.currentThread().interrupt();
+        Thread.sleep(1);
+        System.out.println(Thread.currentThread().isInterrupted());
     }
 }

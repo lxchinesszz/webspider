@@ -1,7 +1,6 @@
 package org.spider.util;
 
 import com.google.common.util.concurrent.*;
-import io.netty.channel.ConnectTimeoutException;
 import lombok.extern.slf4j.Slf4j;
 import org.spider.core.pipeline.DownloadsPipeline;
 import org.spider.core.task.SpiderTask;
@@ -14,7 +13,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author liuxin
- * @version Id: SpiderThreadExecutor.java, v 0.1 2018/7/27 下午2:04
+ * @version Id: SpiderThreadExecutor.java, v 0.1 2018/7/27 下午6:04
  */
 @Slf4j
 public class SpiderThreadExecutor {
